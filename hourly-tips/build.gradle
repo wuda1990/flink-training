@@ -23,3 +23,4 @@ ext.scalaSolutionClassName = 'org.apache.flink.training.solutions.hourlytips.sca
 apply plugin: 'application'
 
 mainClassName = ext.javaExerciseClassName
+

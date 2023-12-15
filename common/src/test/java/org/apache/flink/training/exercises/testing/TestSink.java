@@ -45,6 +45,8 @@ public class TestSink<OUT> extends RichSinkFunction<OUT> {
     @Override
     public void invoke(OUT value, Context context) {
         getRuntimeContext().getAccumulator(name).add(value);
+        //print current ThreadName
+        System.out.println(Thread.currentThread().getName() + ":" + value);
     }
 
     public List<OUT> getResults(JobExecutionResult jobResult) {

@@ -25,7 +25,7 @@ import org.apache.flink.training.solutions.ridecleansing.RideCleansingSolution;
 import org.junit.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
-
+//Unit test for RideCleansingExercise.NYCFilter which is a method test
 public class RideCleansingUnitTest extends RideCleansingTestBase {
 
     public ComposedFilterFunction<TaxiRide> filterFunction() {
